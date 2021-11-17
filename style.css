@@ -1,0 +1,126 @@
+body{
+    background-color: slategray;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    max-height: 95vh;
+}
+.grid {
+    background-color:darkgray;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns:  repeat(9, 1fr);
+    gap: 0.1em;
+    width: 65vw;
+    height: 65vw;
+    max-width: 95vh;
+    max-height: 95vh;
+    margin: auto;
+}
+
+.tile{
+    background-color: white;
+    cursor: pointer;
+}
+
+.vertical {
+    margin: auto;
+    width: 25vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.card {
+    flex: 1 1 auto;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    overflow: hidden;
+    width: fit-content;
+    max-width: 25vw;
+    height: 25vh;
+    max-height: 25vh;
+    background-color: aliceblue;
+}
+
+img{
+    height: 100%;
+    padding: 0;
+    object-fit: contain;
+}
+
+.button {
+    max-height: 10vh;
+    flex: 0 0 auto;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-size: 1.5em;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    user-select: none;
+}
+
+.button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    cursor: pointer;
+}
+
+.palette{
+    width: 25vw;
+    flex-basis: auto;
+    display: flex;
+    max-height: 50vh;
+    flex-flow: column wrap;
+    align-content: center;
+    background-color: lightslategray;
+}
+
+.color {
+    flex:auto;
+    width: 5vw;
+    height: 5vw;
+    max-width: 5vw;
+    max-height: 5vw;
+    margin-bottom: 1em;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 1;
+    color: darkslategray;
+    border-color: currentColor;
+    cursor: pointer;
+}
+#red{
+    background-color:tomato;
+}
+#green{
+    background-color:darkolivegreen;
+}
+#blue{
+    background-color:cornflowerblue;
+}
+#yellow{
+    background-color:goldenrod;
+}
+#none{
+    background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
+}
+.selected {
+    
+    color:aliceblue;
+}

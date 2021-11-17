@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patchwork Doodle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="horizontal">
+        <div class="grid">
+        </div>
+        <div class="vertical">
+            <div class="card" id="flip">
+                <img id="img" src="img/PD_Retro.png" name="canvas" />
+            </div>
+
+            <a class="button" onclick="displayImage();">Estrai</a>
+            <div class="palette">
+                <div class="color" id="red" onclick="select(this)"></div>
+                <div class="color" id="green" onclick="select(this)"></div>
+                <div class="color" id="blue" onclick="select(this)"></div>
+                <div class="color selected" id="yellow" onclick="select(this)"></div>
+                <div class="color" id="none" onclick="select(this)"></div>
+            </div>
+            <a class="button" onclick="reset();">Pulisci</a>
+        </div>
+    </div>
+</body>
+
+</html>
