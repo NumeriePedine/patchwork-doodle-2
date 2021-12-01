@@ -11,6 +11,9 @@ $(document).ready(function () {
     for (var j = 1; j < 10; j++)
       $(".grid").append("<div class='tile " + i + j + "' onclick='paint(this)'></div>")
   }
+  for (var i = 1; i < 26; i++) {
+    preload('img/PD2_carta' + num + ".png")
+  }
 });
 
 function select(el) {
@@ -108,4 +111,11 @@ function send() {
   precompiledForm = googleForm.replace(tempGameDataValue, gameData)
 
   window.open(precompiledForm)
+}
+
+
+
+function preload(url) {
+  img = new Image()
+  img.src = url
 }
