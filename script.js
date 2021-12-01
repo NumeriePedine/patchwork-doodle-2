@@ -1,4 +1,3 @@
-var imagesArray = ["dog.jpg", "fox.jpg", "mouse.jpg", "alligator.jpg", "fish.jpg", "parrot.jpg", "cat.jpg"];
 var gameData = ""
 
 
@@ -71,7 +70,7 @@ var flip1 = function () {
   });
   var num = Math.floor(Math.random() * 24 + 1); // 0...6
   var rotation = Math.floor(Math.random() * 3) * 90;
-  document.canvas.src = 'img/PD_carta' + num + ".png";
+  document.canvas.src = 'img/PD2_carta' + num + ".png";
   document.getElementById("img").style.transform = `rotate(${rotation}deg)`;
 
 };
