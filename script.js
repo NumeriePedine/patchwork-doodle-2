@@ -99,7 +99,7 @@ function flip2() {
 };
 
 function send() {
-    var googleForm = "https://docs.google.com/forms/d/e/1FAIpQLSc9RKui-c_H1x8PWJvzu2RQoyXpf5u6PJuYTR-O1jpS9g8luA/viewform?usp=pp_url&entry.1077601543=TODAY&entry.1872418826=NOW&entry.1173761112=GAME_DATA"
+    var googleForm = "https://docs.google.com/forms/d/e/1FAIpQLSf32XKVMRbQgc4p0wBpLTMBmVrQ8-psKNjv5G8ciXN_ZV03Cg/viewform?usp=pp_url&entry.381862088=DATE&entry.399250374=TIME&entry.201348009=GAME_DATA"
     var tempGameDataValue = "GAME_DATA"
     var date = new Date();
     var dd = String(date.getDate()).padStart(2, '0');
@@ -115,8 +115,8 @@ function send() {
 
     date = yyyy + '-' + MM + '-' + dd;
     time = hh + ":" + mm
-    googleForm = googleForm.replace("TODAY", date)
-    googleForm = googleForm.replace("NOW", time)
+    googleForm = googleForm.replace("DATE", date)
+    googleForm = googleForm.replace("TIME", time)
     precompiledForm = googleForm.replace(tempGameDataValue, gameData)
 
     window.open(precompiledForm)
