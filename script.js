@@ -1,10 +1,14 @@
 var gameData = ""
 
-
 function displayImage() {
     flip1();
     flip2();
 };
+
+function preload(url) {
+    img = new Image()
+    img.src = url
+}
 
 $(document).ready(function() {
     for (var i = 1; i < 10; i++) {
@@ -120,11 +124,4 @@ function send() {
     precompiledForm = googleForm.replace(tempGameDataValue, gameData)
 
     window.open(precompiledForm)
-}
-
-
-
-function preload(url) {
-    img = new Image()
-    img.src = url
 }
