@@ -108,35 +108,37 @@ img {
 }
 
 #giallo {
-    background-color: yellow;
+    background-color: rgb(249, 228, 37);
+    ;
 }
 
 #blu {
-    background-color: blue;
+    background-color: rgb(71, 76, 113);
 }
 
 #verde {
-    background-color: green;
+    background-color: rgb(87, 124, 120);
+    ;
 }
 
 #rosso {
-    background-color: red;
+    background-color: rgb(249, 89, 64);
 }
 
 #fucsia {
-    background-color: fuchsia;
+    background-color: rgb(208, 67, 122);
 }
 
 #marrone {
-    background-color: brown;
+    background-color: rgb(167, 99, 78);
 }
 
 #grigio {
-    background-color: grey;
+    background-color: rgb(165, 164, 159);
 }
 
 #nero {
-    background-color: black;
+    background-color: rgb(81, 75, 79);
 }
 
 #none {
